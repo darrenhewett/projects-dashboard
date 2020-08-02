@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Weekly Projects Dashboard Proof of Concept</title>
+    <style type="text/css">
+    	.upload-drop-zone {
+			  height: 200px;
+			  border-width: 2px;
+			  margin-bottom: 20px;
+			}
+			.upload-drop-zone {
+			  color: #ccc;
+			  border-style: dashed;
+			  border-color: #ccc;
+			  line-height: 200px;
+			  text-align: center
+			}
+			.upload-drop-zone.drop {
+			  color: #222;
+			  border-color: #222;
+			}
+			thead tr th:first-child,
+			tbody tr td:first-child {
+			  min-width: 8em;
+			  max-width: 18em;
+			  word-break: break-all;
+			}
+			.employee {
+				max-width: 8em;
+			}
+		</style>
+  </head>
+  <body>
+  	<nav class="navbar shadow sticky-top navbar-dark bg-dark">
+  		<a class="navbar-brand" href=".">Weekly Projects Dashboard Proof of Concept</a>
+  	</nav>
+    <div class="container p-3">
+			<div id="out">
+				<div class="upload-drop-zone" id="drop-zone">Drag and drop .csv files here</div>
+				<button type="button" class="btn btn-primary" onclick="paint(GenData());">
+				Or generate random data</button>
+			</div>
+		</div>
+  </body>
+<script async src="code.js"></script>
+</html>
